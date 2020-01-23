@@ -1,1 +1,32 @@
 // Navigation Styles here
+nav{
+    .flexRow();
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 16%;
+    border-bottom: dotted grey 2px;
+
+    div{
+        .flexRow();
+        justify-content: space-between;
+        width: 40vh;
+
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 1.5rem;
+        }
+
+    }
+
+    @media @mobile {
+        .flexColumn();
+
+        h1{
+            font-size: 2rem;
+            padding: 3%;
+        }
+    }
+
+}
+

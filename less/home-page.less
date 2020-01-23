@@ -1,5 +1,10 @@
 .home {
 
+  .welcome{
+    border-bottom: grey dotted 2px;
+    padding: 2% 0;
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
@@ -56,6 +61,59 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn button{
+        .defaultBtn(@eastern-blue, @white);
+      }
     }
   }
+
+  @media @mobile{
+    padding: 0% 3%;
+
+    .content-section{
+      .flexColumn();
+
+      .text-content{
+        width: 100%;
+      }
+
+      .img-content{
+        width: 100%;
+      }
+
+    }
+
+    .inverse-content{
+      .flexColumn();
+      flex-direction: column-reverse;
+
+    }
+
+    .content-destination{
+      width: 100%;
+    }
+
+    .content-pick{
+      .flexColumn();
+      justify-content: center;
+
+      .destination{
+        width: 80%;
+        padding: 2%;
+        align-self: center;
+
+        .btn{
+        text-align: center;
+         button{
+           width: 100%;
+         }
+        }
+
+      }
+
+    }
+  }
+
+
 }// home
